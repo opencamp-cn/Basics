@@ -8,396 +8,260 @@
 # Remove the I AM NOT DONE comment in the exercises/intro/intro1.rs file
 # to move on to the next exercise."""
 
+[[exercises]]
+name = "intro2"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro3"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro4"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro5"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro6"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro7"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro8"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro9"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro10"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro11"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro12"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro13"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro14"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro15"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
+[[exercises]]
+name = "intro16"
+path = "exercises/intro/intro2.rs"
+mode = "compile"
+hint = """
+Add an argument after the format string."""
 
-# VECS
+# VARIABLES
 
 [[exercises]]
-name = "vecs1"
-path = "exercises/vecs/vecs1.rs"
-mode = "test"
+name = "variables1"
+path = "exercises/variables/variables1.rs"
+mode = "compile"
 hint = """
-In Rust, there are two ways to define a Vector.
-1. One way is to use the `Vec::new()` function to create a new vector
-  and fill it with the `push()` method.
-2. The second way, which is simpler is to use the `vec![]` macro and
-  define your elements inside the square brackets.
-Check this chapter: https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
-of the Rust book to learn more.
+The declaration on line 8 is missing a keyword that is needed in Rust
+to create a new variable binding."""
+
+[[exercises]]
+name = "variables2"
+path = "exercises/variables/variables2.rs"
+mode = "compile"
+hint = """
+The compiler message is saying that Rust cannot infer the type that the
+variable binding `x` has with what is given here.
+What happens if you annotate line 7 with a type annotation?
+What if you give x a value?
+What if you do both?
+What type should x be, anyway?
+What if x is the same type as 10? What if it's a different type?"""
+
+[[exercises]]
+name = "variables3"
+path = "exercises/variables/variables3.rs"
+mode = "compile"
+hint = """
+Oops! In this exercise, we have a variable binding that we've created on
+line 7, and we're trying to use it on line 8, but we haven't given it a
+value. We can't print out something that isn't there; try giving x a value!
+This is an error that can cause bugs that's very easy to make in any
+programming language -- thankfully the Rust compiler has caught this for us!"""
+
+[[exercises]]
+name = "variables4"
+path = "exercises/variables/variables4.rs"
+mode = "compile"
+hint = """
+In Rust, variable bindings are immutable by default. But here we're trying
+to reassign a different value to x! There's a keyword we can use to make
+a variable binding mutable instead."""
+
+[[exercises]]
+name = "variables5"
+path = "exercises/variables/variables5.rs"
+mode = "compile"
+hint = """
+In variables4 we already learned how to make an immutable variable mutable
+using a special keyword. Unfortunately this doesn't help us much in this exercise
+because we want to assign a different typed value to an existing variable. Sometimes
+you may also like to reuse existing variable names because you are just converting
+values to different types like in this exercise.
+Fortunately Rust has a powerful solution to this problem: 'Shadowing'!
+You can read more about 'Shadowing' in the book's section 'Variables and Mutability':
+https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing
+Try to solve this exercise afterwards using this technique."""
+
+[[exercises]]
+name = "variables6"
+path = "exercises/variables/variables6.rs"
+mode = "compile"
+hint = """
+We know about variables and mutability, but there is another important type of
+variable available: constants.
+Constants are always immutable and they are declared with keyword 'const' rather
+than keyword 'let'.
+Constants types must also always be annotated.
+
+Read more about constants and the differences between variables and constants under 'Constants' in the book's section 'Variables and Mutability':
+https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants
 """
 
+# FUNCTIONS
+
 [[exercises]]
-name = "vecs2"
-path = "exercises/vecs/vecs2.rs"
+name = "functions1"
+path = "exercises/functions/functions1.rs"
+mode = "compile"
+hint = """
+This main function is calling a function that it expects to exist, but the
+function doesn't exist. It expects this function to have the name `call_me`.
+It expects this function to not take any arguments and not return a value.
+Sounds a lot like `main`, doesn't it?"""
+
+[[exercises]]
+name = "functions2"
+path = "exercises/functions/functions2.rs"
+mode = "compile"
+hint = """
+Rust requires that all parts of a function's signature have type annotations,
+but `call_me` is missing the type annotation of `num`."""
+
+[[exercises]]
+name = "functions3"
+path = "exercises/functions/functions3.rs"
+mode = "compile"
+hint = """
+This time, the function *declaration* is okay, but there's something wrong
+with the place where we're calling the function.
+As a reminder, you can freely play around with different solutions in Rustlings!
+Watch mode will only jump to the next exercise if you remove the I AM NOT DONE comment."""
+
+[[exercises]]
+name = "functions4"
+path = "exercises/functions/functions4.rs"
+mode = "compile"
+hint = """
+The error message points to line 17 and says it expects a type after the
+`->`. This is where the function's return type should be -- take a look at
+the `is_even` function for an example!
+
+Also: Did you figure out that, technically, u32 would be the more fitting type
+for the prices here, since they can't be negative? If so, kudos!"""
+
+[[exercises]]
+name = "functions5"
+path = "exercises/functions/functions5.rs"
+mode = "compile"
+hint = """
+This is a really common error that can be fixed by removing one character.
+It happens because Rust distinguishes between expressions and statements: expressions return a value based on their operand(s), and statements simply return a () type which behaves just like `void` in C/C++ language.
+We want to return a value of `i32` type from the `square` function, but it is returning a `()` type...
+They are not the same. There are two solutions:
+1. Add a `return` ahead of `num * num;`
+2. remove `;`, make it to be `num * num`"""
+
+# IF
+
+[[exercises]]
+name = "if1"
+path = "exercises/if/if1.rs"
 mode = "test"
 hint = """
-Hint 1: In the code, the variable `element` represents an item from the Vec as it is being iterated.
-Can you try multiplying this?
-
-Hint 2: For the first function, there's a way to directly access the numbers stored
-in the Vec, using the * dereference operator. You can both access and write to the
-number that way.
-
-After you've completed both functions, decide for yourself which approach you like
-better. What do you think is the more commonly used pattern under Rust developers?
-"""
-
-# MOVE SEMANTICS
-
+It's possible to do this in one line if you would like!
+Some similar examples from other languages:
+- In C(++) this would be: `a > b ? a : b`
+- In Python this would be:  `a if a > b else b`
+Remember in Rust that:
+- the `if` condition does not need to be surrounded by parentheses
+- `if`/`else` conditionals are expressions
+- Each condition is followed by a `{}` block."""
 
 [[exercises]]
-name = "move_semantics4"
-path = "exercises/move_semantics/move_semantics4.rs"
-mode = "compile"
-hint = """
-Stop reading whenever you feel like you have enough direction :) Or try
-doing one step and then fixing the compiler errors that result!
-So the end goal is to:
-   - get rid of the first line in main that creates the new vector
-   - so then `vec0` doesn't exist, so we can't pass it to `fill_vec`
-   - `fill_vec` has had its signature changed, which our call should reflect
-   - since we're not creating a new vec in `main` anymore, we need to create
-     a new vec in `fill_vec`, similarly to the way we did in `main`"""
-
-[[exercises]]
-name = "move_semantics5"
-path = "exercises/move_semantics/move_semantics5.rs"
-mode = "compile"
-hint = """
-Carefully reason about the range in which each mutable reference is in
-scope. Does it help to update the value of referent (x) immediately after
-the mutable reference is taken? Read more about 'Mutable References'
-in the book's section References and Borrowing':
-https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#mutable-references.
-"""
-
-[[exercises]]
-name = "move_semantics6"
-path = "exercises/move_semantics/move_semantics6.rs"
-mode = "compile"
-hint = """
-To find the answer, you can consult the book section "References and Borrowing":
-https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html
-The first problem is that `get_char` is taking ownership of the string.
-So `data` is moved and can't be used for `string_uppercase`
-`data` is moved to `get_char` first, meaning that `string_uppercase` cannot manipulate the data.
-Once you've fixed that, `string_uppercase`'s function signature will also need to be adjusted.
-Can you figure out how?
-
-Another hint: it has to do with the `&` character."""
-
-# STRUCTS
-
-[[exercises]]
-name = "structs1"
-path = "exercises/structs/structs1.rs"
+name = "if2"
+path = "exercises/if/if2.rs"
 mode = "test"
 hint = """
-Rust has more than one type of struct. Three actually, all variants are used to package related data together.
-There are normal (or classic) structs. These are named collections of related data stored in fields.
-Tuple structs are basically just named tuples.
-Finally, Unit-like structs. These don't have any fields and are useful for generics.
-
-In this exercise you need to complete and implement one of each kind.
-Read more about structs in The Book: https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
-
-
-# STRINGS
-
+For that first compiler error, it's important in Rust that each conditional
+block returns the same type! To get the tests passing, you will need a couple
+conditions checking different input values."""
 
 [[exercises]]
-name = "strings3"
-path = "exercises/strings/strings3.rs"
+name = "if3"
+path = "exercises/if/if3.rs"
 mode = "test"
 hint = """
-There's tons of useful standard library functions for strings. Let's try and use some of
-them: <https://doc.rust-lang.org/std/string/struct.String.html#method.trim>!
+In Rust, every arm of an `if` expression has to return the same type of value. Make sure the type is consistent across all arms."""
 
-For the compose_me method: You can either use the `format!` macro, or convert the string
-slice into an owned string, which you can then freely extend."""
+# QUIZ 1
 
 [[exercises]]
-name = "strings4"
-path = "exercises/strings/strings4.rs"
-mode = "compile"
+name = "quiz1"
+path = "exercises/quiz1.rs"
+mode = "test"
 hint = "No hints this time ;)"
-
-# MODULES
-
-
-[[exercises]]
-name = "modules2"
-path = "exercises/modules/modules2.rs"
-mode = "compile"
-hint = """
-The delicious_snacks module is trying to present an external interface that is
-different than its internal structure (the `fruits` and `veggies` modules and
-associated constants). Complete the `use` statements to fit the uses in main and
-find the one keyword missing for both constants.
-Learn more at https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#re-exporting-names-with-pub-use"""
-
-# HASHMAPS
-
-[[exercises]]
-name = "hashmaps1"
-path = "exercises/hashmaps/hashmaps1.rs"
-mode = "test"
-hint = """
-Hint 1: Take a look at the return type of the function to figure out
-  the type for the `basket`.
-Hint 2: Number of fruits should be at least 5. And you have to put
-  at least three different types of fruits.
-"""
-
-[[exercises]]
-name = "hashmaps2"
-path = "exercises/hashmaps/hashmaps2.rs"
-mode = "test"
-hint = """
-Use the `entry()` and `or_insert()` methods of `HashMap` to achieve this.
-Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
-"""
-
-[[exercises]]
-name = "hashmaps3"
-path = "exercises/hashmaps/hashmaps3.rs"
-mode = "test"
-hint = """
-Hint 1: Use the `entry()` and `or_insert()` methods of `HashMap` to insert entries corresponding to each team in the scores table.
-Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
-Hint 2: If there is already an entry for a given key, the value returned by `entry()` can be updated based on the existing value.
-Learn more at https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
-"""
-
-# QUIZ 2
-
-[[exercises]]
-name = "quiz2"
-path = "exercises/quiz2.rs"
-mode = "test"
-hint = "No hints this time ;)"
-
-# OPTIONS
-
-[[exercises]]
-name = "options1"
-path = "exercises/options/options1.rs"
-mode = "test"
-hint = """
-Options can have a Some value, with an inner value, or a None value, without an inner value.
-There's multiple ways to get at the inner value, you can use unwrap, or pattern match. Unwrapping
-is the easiest, but how do you do it safely so that it doesn't panic in your face later?"""
-
-
-# Generics
-
-[[exercises]]
-name = "generics1"
-path = "exercises/generics/generics1.rs"
-mode = "compile"
-hint = """
-Vectors in Rust make use of generics to create dynamically sized arrays of any type.
-You need to tell the compiler what type we are pushing onto this vector."""
-
-[[exercises]]
-name = "generics2"
-path = "exercises/generics/generics2.rs"
-mode = "test"
-hint = """
-Currently we are wrapping only values of type 'u32'.
-Maybe we could update the explicit references to this data type somehow?
-
-If you are still stuck https://doc.rust-lang.org/stable/book/ch10-01-syntax.html#in-method-definitions
-"""
-
-# TRAITS
-
-
-[[exercises]]
-name = "traits3"
-path = "exercises/traits/traits3.rs"
-mode = "test"
-hint = """
-Traits can have a default implementation for functions. Structs that implement
-the trait can then use the default version of these functions if they choose not
-implement the function themselves.
-
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
-"""
-
-[[exercises]]
-name = "traits4"
-path = "exercises/traits/traits4.rs"
-mode = "test"
-hint = """
-Instead of using concrete types as parameters you can use traits. Try replacing the
-'??' with 'impl <what goes here?>'
-
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#traits-as-parameters
-"""
-
-
-# QUIZ 3
-
-[[exercises]]
-name = "quiz3"
-path = "exercises/quiz3.rs"
-mode = "test"
-hint = """
-To find the best solution to this challenge you're going to need to think back to your
-knowledge of traits, specifically Trait Bound Syntax -  you may also need this: `use std::fmt::Display;`."""
-
-# LIFETIMES
-
-[[exercises]]
-name = "lifetimes1"
-path = "exercises/lifetimes/lifetimes1.rs"
-mode = "compile"
-hint = """
-Let the compiler guide you. Also take a look at the book if you need help:
-https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html"""
-
-[[exercises]]
-name = "lifetimes2"
-path = "exercises/lifetimes/lifetimes2.rs"
-mode = "compile"
-hint = """
-Remember that the generic lifetime 'a will get the concrete lifetime that is equal to the smaller of the lifetimes of x and y.
-You can take at least two paths to achieve the desired result while keeping the inner block:
-1. Move the string2 declaration to make it live as long as string1 (how is result declared?)
-2. Move println! into the inner block"""
-
-[[exercises]]
-name = "lifetimes3"
-path = "exercises/lifetimes/lifetimes3.rs"
-mode = "compile"
-hint = """
-If you use a lifetime annotation in a struct's fields, where else does it need to be added?"""
-
-# STANDARD LIBRARY TYPES
-
-[[exercises]]
-name = "iterators1"
-path = "exercises/iterators/iterators1.rs"
-mode = "compile"
-hint = """
-Step 1:
-We need to apply something to the collection `my_fav_fruits` before we start to go through
-it. What could that be? Take a look at the struct definition for a vector for inspiration:
-https://doc.rust-lang.org/std/vec/struct.Vec.html
-Step 2 & step 3:
-Very similar to the lines above and below. You've got this!
-Step 4:
-An iterator goes through all elements in a collection, but what if we've run out of
-elements? What should we expect here? If you're stuck, take a look at
-https://doc.rust-lang.org/std/iter/trait.Iterator.html for some ideas.
-"""
-
-[[exercises]]
-name = "iterators2"
-path = "exercises/iterators/iterators2.rs"
-mode = "test"
-hint = """
-Step 1
-The variable `first` is a `char`. It needs to be capitalized and added to the
-remaining characters in `c` in order to return the correct `String`.
-The remaining characters in `c` can be viewed as a string slice using the
-`as_str` method.
-The documentation for `char` contains many useful methods.
-https://doc.rust-lang.org/std/primitive.char.html
-
-Step 2
-Create an iterator from the slice. Transform the iterated values by applying
-the `capitalize_first` function. Remember to collect the iterator.
-
-Step 3.
-This is surprisingly similar to the previous solution. Collect is very powerful
-and very general. Rust just needs to know the desired type."""
-
-# SMART POINTERS
-
-[[exercises]]
-name = "box1"
-path = "exercises/smart_pointers/box1.rs"
-mode = "test"
-hint = """
-Step 1
-The compiler's message should help: since we cannot store the value of the actual type
-when working with recursive types, we need to store a reference (pointer) to its value.
-We should, therefore, place our `List` inside a `Box`. More details in the book here:
-https://doc.rust-lang.org/book/ch15-01-box.html#enabling-recursive-types-with-boxes
-
-Step 2
-Creating an empty list should be fairly straightforward (hint: peek at the assertions).
-For a non-empty list keep in mind that we want to use our Cons "list builder".
-Although the current list is one of integers (i32), feel free to change the definition
-and try other types!
-"""
-
-[[exercises]]
-name = "rc1"
-path = "exercises/smart_pointers/rc1.rs"
-mode = "compile"
-hint = """
-This is a straightforward exercise to use the Rc<T> type. Each Planet has
-ownership of the Sun, and uses Rc::clone() to increment the reference count of the Sun.
-After using drop() to move the Planets out of scope individually, the reference count goes down.
-In the end the sun only has one reference again, to itself. See more at:
-https://doc.rust-lang.org/book/ch15-04-rc.html
-
-* Unfortunately Pluto is no longer considered a planet :(
-"""
-
-[[exercises]]
-name = "arc1"
-path = "exercises/smart_pointers/arc1.rs"
-mode = "compile"
-hint = """
-Make `shared_numbers` be an `Arc` from the numbers vector. Then, in order
-to avoid creating a copy of `numbers`, you'll need to create `child_numbers`
-inside the loop but still in the main thread.
-
-`child_numbers` should be a clone of the Arc of the numbers instead of a
-thread-local copy of the numbers.
-
-This is a simple exercise if you understand the underlying concepts, but if this
-is too much of a struggle, consider reading through all of Chapter 16 in the book:
-https://doc.rust-lang.org/stable/book/ch16-00-concurrency.html
-"""
-
-[[exercises]]
-name = "cow1"
-path = "exercises/smart_pointers/cow1.rs"
-mode = "test"
-hint = """
-If Cow already owns the data it doesn't need to clone it when to_mut() is called.
-
-Check out https://doc.rust-lang.org/std/borrow/enum.Cow.html for documentation
-on the `Cow` type.
-"""
-
-# MACROS
-
-[[exercises]]
-name = "macros1"
-path = "exercises/macros/macros1.rs"
-mode = "compile"
-hint = """
-When you call a macro, you need to add something special compared to a
-regular function call. If you're stuck, take a look at what's inside
-`my_macro`."""
-
-[[exercises]]
-name = "macros2"
-path = "exercises/macros/macros2.rs"
-mode = "compile"
-hint = """
-Macros don't quite play by the same rules as the rest of Rust, in terms of
-what's available where.
-
-Unlike other things in Rust, the order of "where you define a macro" versus
-"where you use it" actually matters."""
-
-
-
-
-

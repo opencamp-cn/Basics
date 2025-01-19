@@ -1,18 +1,18 @@
-## 第一期 Rust 入门训练营-基础阶段
+## 2025年春季第一期 Rust 入门训练营-导学阶段基础测试
 
+**请在完成本实验后凭借排行榜分数截图练习班主任加入学习交流群**
 
-
-基础阶段实验同样将通过Rustlings进行测试，请按照以下步骤进行练习：
+导学阶段将通过 Rustlings 进行测试，我们选取了 Rustlings 练习的前16道基础题目进行测试，确保您具备基本的编程能力，请按照以下步骤进行练习：
 
 1. 在网络浏览器中用自己的 github id 登录 github.com。
-2. **fork 本仓库**，并按照下述引导进行答题，**在完成全部题目后请凭借排行榜成绩截图联系班主任进入专业阶段学习群**：
+2. 请将本仓库 fork 到您的 github 账号下，然后参照以下步骤完成环境配置和实验提交:
 * 本地环境：
   1. **安装Linux的环境**。对于windows的用户，推荐使用wsl2安装Ubuntu 22.04，也可以使用vmware等虚拟机进行安装。如果在这一步存在问题，请联系助教。
   2. **创建ssh key，用于ssh方式克隆github代码**。在linux环境下，使用`ssh-keygen -t rsa -b 4096 -C "你的邮箱"`命令，创建ssh key，下面的选项全部直接敲回车即可。 随后使用` cat ~/.ssh/id_rsa.pub` 命令查看生成的公钥，并完整的复制下来。 在github仓库界面点击自己的头像，选择`settings`。进入到设置页面后，点击左侧的`SSH and GPG keys`选项。点击`New SSH key`选项，并将复制下来的内容粘贴上去，添加该ssh key的描述。随后点击`Add SSH key`，并一路点击确认即可。
   3. **本地安装rust**。进入linux环境下，参考Arceos 教程 [Rust 开发环境配置 - ArceOS Tutorial Book (rcore-os.cn)](https://rcore-os.cn/arceos-tutorial-book/ch01-02.html) 中，找到Rust 开发环境配置的章节，相应配置即可，你可以同时将后续需要的环境也配置好.
   4. **clone实验仓库到本地。**在前面点击链接生成的仓库中，同样点击醒目的 `code` 绿色按钮，选择`local`下的`ssh`选项，复制下面的链接。随后回到本地linux环境下，使用`git clone 复制的链接`的方式，将目标仓库clone到本地。随后，使用`ls`命令查看自己clone下来的文件夹，再使用`cd`命令进入到该文件夹下，使用  `cargo install --force --path .`  安装rustlings。
   5. **练习rustlings**。使用vscode等编辑器，进入clone下来的目录下的`exercises`文件夹，执行`rustlings watch`依次查看完成情况，并依次完成对应的练习。 执行`rustlings run 练习名称`去运行对应练习，也可以使用`rustlings hint 练习名称`查看题解。
-  6. **提交完成情况**。当做完部分或所有练习之后，在rustlings目录下执行 `git add .; git commit -m "update"; git push` 命令，把更新提交到GithubClassroom的CI进行自动评测。你可以在github仓库页面的actions页面，看到你的CI提交结果，或者 https://opencamp.ai/Rust/camp/S01/stage/1?tab=rank上面查看自己的评分。
+  6. **提交完成情况**。当做完部分或所有练习之后，在rustlings目录下执行 `git add .; git commit -m "update"; git push` 命令，把更新提交到GithubClassroom的CI进行自动评测。你可以在github仓库页面的actions页面，看到你的CI提交结果，或者 https://opencamp.ai/Rust/camp/S01/stage/0?tab=rank 上面查看自己的评分。
 * 在线环境：
 
   1. 如果使用在线环境，在本网页的中上部可以看到一个醒目的 `code` 绿色按钮，点击后，可以进一步看到 `codespace` 标签和醒目的 `create codesapce on main` 绿色按钮。请点击这个绿色按钮，就可以进入到在线的ubuntu +vscode环境中
